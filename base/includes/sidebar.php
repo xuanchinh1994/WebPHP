@@ -76,12 +76,17 @@
                 echo "<li ";
                 if($module == "in") echo 'id="active"';
                 echo ">";
-                echo '<a href="/webPHP1/dashboard/index.php?mod=in">HOME</a>';
+                echo '<a href="/webPHP/dashboard/index.php?mod=in">HOME</a>';
                 echo "</li>";
                 echo "<li ";
                 if($module == "out") echo 'id="active"';
                 echo ">";
-                echo '<a href="/webPHP1/dashboard/index.php?mod=out">MAPS</a>';
+                echo '<a href="/webPHP/dashboard/index.php?mod=out">MAPS</a>';
+                echo "</li>";
+                echo "<li ";
+                if($module == "home") echo 'id="active"';
+                echo ">";
+                echo '<a href="/webPHP/dashboard/index.php?mod=home">HOME_1</a>';
                 echo "</li>";
             }
         ?>

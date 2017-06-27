@@ -7,6 +7,21 @@
 <?php include_once '../base/includes/page_title.php' ?>
 <!-- page title -->
 
-<?php include_once 'includes/in.php'; ?>
-    
+<?php
+if($module == "in")
+{
+    include_once 'includes/in.php';
+}
+if($module == "home")
+{
+    include_once 'includes/home.php';
+}
+
+
+?>
+
+<?php //include_once 'includes/in.php'; ?>
+<!---->
+<?php //include_once 'includes/home.php'; ?>
+
 <?php include_once '../base/includes/footer.php'; ?>
