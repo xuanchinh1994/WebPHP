@@ -336,7 +336,7 @@
         get_hum_data_1();
         get_light_element();
         get_smoke_element();
-        get_sw1_element();
+//        get_sw1_element();
     };
 </script>
 

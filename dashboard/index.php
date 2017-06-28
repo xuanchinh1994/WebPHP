@@ -12,6 +12,10 @@ if($module == "in")
 {
     include_once 'includes/in.php';
 }
+if($module == "map")
+{
+    include_once 'includes/map.php';
+}
 if($module == "home")
 {
     include_once 'includes/home.php';
