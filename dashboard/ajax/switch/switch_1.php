@@ -6,9 +6,12 @@
  * Time: 6:11 PM
  */
 echo($_GET["checked"]);
-$checked = 0;
-if ($_GET["checked"] == "true"){
+$checked = 2;
+if ($_GET["checked"] == "1"){
     $checked = 1;
+}
+if ($_GET["checked"] == "2"){
+    $checked = 2;
 }
 include_once '../../../base/includes/db.php';
 $query = "UPDATE sw_status SET sw1 = ".$checked;
