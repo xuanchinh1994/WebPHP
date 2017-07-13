@@ -51,7 +51,22 @@ if(isset($_GET['menu'])){
         <script src="../base/js/switch/highlight.js"></script>
         <script src="../base/js/switch/bootstrap-switch.js"></script>
         <script src="../base/js/switch/main.js"></script>
-		
+
+        <link rel="stylesheet" type="text/css" href="../base/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="../base/css/owl.transitions.css"/>
+        <link rel="stylesheet" type="text/css" href="../base/css/owl.carousel.css"/>
+        <link rel="stylesheet" type="text/css" href="../base/css/animate.css"/>
+        <link rel="stylesheet" type="text/css" href="../base/css/main.css"/>
+
+
+        <script type="text/javascript" src="../base/js/jquery.js"></script>
+        <script type="text/javascript" src="../base/js/ajaxchimp.js"></script>
+        <script type="text/javascript" src="../base/js/scrollTo.js"></script>
+        <script type="text/javascript" src="../base/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="../base/js/wow.js"></script>
+        <script type="text/javascript" src="../base/js/parallax.js"></script>
+        <script type="text/javascript" src="../base/js/nicescroll.js"></script>
+        <script type="text/javascript" src="../base/js/main.js"></script>
     </head>
     
     <body>

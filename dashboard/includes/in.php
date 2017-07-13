@@ -1,5 +1,5 @@
-<hr class="style-four">
-<div class="row">
+<!--<hr class="style-four">-->
+<!--<div class="row">-->
 <div class="col-md-6 col-sm-6 col-xs-12" id="gas">
     <div class="info-box">
         <span class="info-box-icon bg-green"><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span></span>
@@ -20,18 +20,35 @@
 </div><!-- /.col -->
 </div>
 <script>
-    function get_smoke_element() {
-        $.post("ajax/smoke/get_smoke.php", function (data) {
-            document.getElementById("smokeSpan").innerText = data
+    function get_smoke_light() {
+        $.ajax({
+            url: 'ajax/ajax_get.php',
+            type: 'POST',
+//            data: {name: 'test'},
+            dataType: 'html',
+            success: function (data) {
+                var vals = data.split(",");
+                document.getElementById("smokeSpan").innerText = vals[0];
+                document.getElementById("lightSpan").innerText = vals[1];
+            }, error: function (xhr, ajaxOptions, thrownError) {
+                console.log("ERROR:" + xhr.responseText + " - " + thrownError);
+            }
         });
+
     }
-    setInterval(get_smoke_element, 5000);
-    function get_light_element() {
-        $.post("ajax/light/get_light.php", function (data) {
-            document.getElementById("lightSpan").innerText = data
-        });
-    }
-    setInterval(get_light_element, 5000);
+    window.setInterval(get_smoke_light, 1000);
+//    function get_smoke_element() {
+//        $.post("ajax/smoke/get_smoke.php", function (data) {
+//            document.getElementById("smokeSpan").innerText = data
+//        });
+//    }
+//    setInterval(get_smoke_element, 5000);
+//    function get_light_element() {
+//        $.post("ajax/light/get_light.php", function (data) {
+//            document.getElementById("lightSpan").innerText = data
+//        });
+//    }
+//    setInterval(get_light_element, 5000);
 </script>
 <script>
     function formatDate(date) {
@@ -217,7 +234,7 @@
                 humGauge.refresh(humidity);
             }, 5000);
         }
-        setInterval(get_hum_element, 10000);
+        setInterval(get_hum_element, 3000);
     </script>
 
     <div class="col-md-3 col-md-3 col-sm-3">
@@ -334,9 +351,10 @@
         get_day_temp_stat();
         get_temps_data();
         get_hum_data();
-        get_light_element();
-        get_smoke_element();
-        get_sw1_element();
+        get_smoke_light();
+//        get_light_element();
+//        get_smoke_element();
+//        get_sw1_element();
     };
 </script>
 

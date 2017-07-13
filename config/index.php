@@ -7,6 +7,11 @@
 
 
 <?php
+
+    if($module == "about")
+    {
+        include_once 'includes/about.php';
+    }
     if(isset($_GET['add_user'])){
         $add_user = $_GET['add_user']; 
     }
