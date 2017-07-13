@@ -59,7 +59,7 @@ if(isset($_GET['menu'])){
         <link rel="stylesheet" type="text/css" href="../base/css/main.css"/>
 
 
-        <script type="text/javascript" src="../base/js/jquery.js"></script>
+<!--        <script type="text/javascript" src="../base/js/jquery.js"></script>-->
         <script type="text/javascript" src="../base/js/ajaxchimp.js"></script>
         <script type="text/javascript" src="../base/js/scrollTo.js"></script>
         <script type="text/javascript" src="../base/js/owl.carousel.min.js"></script>

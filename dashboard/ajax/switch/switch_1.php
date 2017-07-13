@@ -7,10 +7,10 @@
  */
 echo($_GET["checked"]);
 $checked = 2;
-if ($_GET["checked"] == "1"){
+if ($_GET["checked"] == "true"){
     $checked = 1;
 }
-if ($_GET["checked"] == "2"){
+if ($_GET["checked"] == "false"){
     $checked = 2;
 }
 include_once '../../../base/includes/db.php';

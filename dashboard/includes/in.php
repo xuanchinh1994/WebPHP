@@ -1,3 +1,4 @@
+<?php include_once '../base/includes/header.php'; ?>
 <!--<hr class="style-four">-->
 <!--<div class="row">-->
 <div class="col-md-6 col-sm-6 col-xs-12" id="gas">
@@ -354,7 +355,7 @@
         get_smoke_light();
 //        get_light_element();
 //        get_smoke_element();
-//        get_sw1_element();
+        get_sw1_element();
     };
 </script>
 
@@ -391,18 +392,19 @@
 <script>
     function get_sw1_element() {
         $.post("ajax/switch/get_sw_1.php", function (data) {
-//            console.log(data);
+            console.log(data);
             if (data == 1){
-                document.getElementById("switch-1").checked = true
+                $('#switch-1').bootstrapSwitch('state', true, true);
             }
             else {
-                document.getElementById("switch-1").checked = false
+                $('#switch-1').bootstrapSwitch('state', false, true);
             }
 //                console.log(data);
         });
     }
     setInterval(get_sw1_element, 5000);
     function handleSw1(obj){
+//        console.log(obj.checked)
         $.post("ajax/switch/switch_1.php?checked=" + obj.checked, function (data) {
 //            console.log(data);
         });
