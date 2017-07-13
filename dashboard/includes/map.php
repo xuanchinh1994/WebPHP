@@ -43,8 +43,8 @@
             }
         });
 
-//        console.log(kinhdo);
-//        console.log(vido);
+        console.log(kinhdo);
+        console.log(vido);
         var uluru = {lat: kinhdo, lng: vido};
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 15,

@@ -78,7 +78,7 @@
                 echo "<li ";
                 if($module == "in") echo 'id="active"';
                 echo ">";
-                echo '<a href="../dashboard/index.php?mod=in">Station 1</a>';
+                echo '<a href="../dashboard/index.php?mod=in">Station A</a>';
                 echo "</li>";
                 echo "<li ";
                 if($module == "out") echo 'id="active"';
@@ -88,7 +88,7 @@
                 echo "<li ";
                 if($module == "home") echo 'id="active"';
                 echo ">";
-                echo '<a href="../dashboard/index.php?mod=home">Station 2</a>';
+                echo '<a href="../dashboard/index.php?mod=home">Station B</a>';
                 echo "</li>";
             }
         ?>

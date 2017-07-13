@@ -363,15 +363,19 @@
     <div class="container-fluid">
         <div class="col-lg-12">
             <div class="row">
+                <div class="col-lg-12">
+                    <h4>CONTROL PANEL</h4>
+                </div>
+
                 <div class="col-lg-10">
                     <table class="table table-condensed">
                         <tbody>
                         <tr>
-                            <td class="vert-align">Central Room</td>
+                            <td class="vert-align ">Light</td>
                             <td>
                                 <input id="switch-1" type="checkbox" onchange=handleSw1(this)>
                             </td>
-                            <td class="vert-align">Bed Room</td>
+                            <td class="vert-align">Fan</td>
                             <td>
                                 <input id="switch-2" type="checkbox" onchange=handleSw2(this)>
                             </td>

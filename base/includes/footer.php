@@ -1,7 +1,7 @@
 <!--                    <div class="spacer"></div>-->
                     <hr class="style-four">
 <!--                    <div class="spacer"></div>-->
-                    <footer class="footer">    
+                    <footer class="footer">
                           <p class="text-muted pull-left"><b>&copy ĐỒ ÁN TỐT NGHIỆP 2017 </b> SMART CUBE </p>
                     </footer>
                 </div>
@@ -24,7 +24,9 @@
         <script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
 
 
-<!-- Slider -->
+
+
+        <!-- Slider -->
         <script src="../base/js/slider/freshslider.min.js"></script>
         <script>
             $("#menu-toggle").click(function(e) {
