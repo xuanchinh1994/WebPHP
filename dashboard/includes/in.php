@@ -365,7 +365,7 @@
 //        get_light_element();
 //        get_smoke_element();
         get_sw1_element();
-
+        get_sw2_element();
         draw_hum_graph();
         draw_temp_graph();
     };
@@ -414,7 +414,20 @@
 //                console.log(data);
         });
     }
-    setInterval(get_sw1_element, 5000);
+    setInterval(get_sw1_element, 3000);
+    function get_sw2_element() {
+        $.post("ajax/switch/get_sw_2.php", function (data) {
+            console.log(data);
+            if (data == 1){
+                $('#switch-2').bootstrapSwitch('state', true, true);
+            }
+            else {
+                $('#switch-2').bootstrapSwitch('state', false, true);
+            }
+//                console.log(data);
+        });
+    }
+    setInterval(get_sw2_element, 3000);
     function handleSw1(obj){
 //        console.log(obj.checked)
         $.post("ajax/switch/switch_1.php?checked=" + obj.checked, function (data) {
@@ -423,7 +436,7 @@
     }
     function handleSw2(obj){
         $.post("ajax/switch/switch_2.php?checked=" + obj.checked, function (data) {
-//            console.log(data);
+            console.log(data);
         });
     }
 </script>
