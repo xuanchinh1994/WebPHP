@@ -142,8 +142,13 @@
                 var today = new Date();
                 var firstDay = new Date();
                 firstDay.setDate(today.getDate() - 7);
+                temps_data = [];
 
                 function get_temps_data() {
+                    if (temps_data.length > 0){
+                        return
+                    }
+                    console.log("get temp data .........")
                     temps_data = [];
                     $.post("ajax/temp/get_avg_temp.php", function (data) {
                         temps_data = JSON.parse(data);
@@ -198,6 +203,7 @@
 
     // Execute every 5 seconds
     window.setInterval(get_day_temp_stat, 1000);
+    window.setInterval(get_temps_data, 1000);
 </script>
 
 <hr class="style-four">
@@ -280,8 +286,12 @@
                 var today = new Date();
                 var firstDay = new Date();
                 firstDay.setDate(today.getDate() - 6);
+                hum_data = [];
                 function get_hum_data() {
-                    hum_data = [];
+                    if (hum_data.length > 0){
+                        return
+                    }
+                    console.log("get hum data ....")
                     $.post("ajax/hum/get_avg_hum.php", function (data) {
                         hum_data = JSON.parse(data);
                         var humChartData = {
@@ -305,6 +315,7 @@
                         });
                     });
                 }
+                window.setInterval(get_hum_data, 1000);
             </script>
         </div>
     </div>
@@ -345,10 +356,8 @@
 <script>
     window.onload = function () {
         get_hum_element();
-        draw_hum_graph();
         get_day_hum_stat();
         get_temp_element();
-        draw_temp_graph();
         get_day_temp_stat();
         get_temps_data();
         get_hum_data();
@@ -356,6 +365,9 @@
 //        get_light_element();
 //        get_smoke_element();
         get_sw1_element();
+
+        draw_hum_graph();
+        draw_temp_graph();
     };
 </script>
 
