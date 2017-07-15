@@ -10,7 +10,11 @@
 </head>
 <body>
     <div class="container-fluid">
+<!--        <form hidden path="kinhdo" id="kinhdo"/>-->
+<!--        <form hidden path="vido" id="vido"/>-->
 <!--        <div class="col-lg-12">-->
+<!--        <div hidden id="kinhdo"></div>-->
+<!--        <div hidden id="vido"></div>-->
 <!--            <section class="content-header">-->
 <!--                <h1>SMARTCUBE LOCATION</h1>-->
 <!--            </section>-->
@@ -32,12 +36,14 @@
         $.ajax({
             url: 'ajax/get_maps.php',
             type: 'POST',
-//            data: {name: 'test'},
-            dataType: 'html',
+            dataType: 'json',
+//            contentType: "application/json",
+            cache: false,
             success: function (data) {
-                var vals = data.split(",");
-                kinhdo = parseFloat( vals[0]);
-                vido = parseFloat(vals[1]);
+//                var vals = data.split(",");
+                kinhdo = parseFloat( data.longitude);
+                vido = parseFloat(data.latitude);
+                console.log(vido);
             }, error: function (xhr, ajaxOptions, thrownError) {
                 console.log("ERROR:" + xhr.responseText + " - " + thrownError);
             }

@@ -47,11 +47,11 @@ $result_sw = mysqli_query($con, $query_sw);
 $result_sw = mysqli_fetch_assoc($result_sw);
 $result_sw1 = $result_sw['sw1'];
 $result_sw2 = $result_sw['sw2'];
-echo 'a'.$result_sw1.',s'.$result_sw2;
+//echo 'a'.$result_sw1.',s'.$result_sw2;
 
-//if (mysqli_query($con, $query_temp)&&mysqli_query($con, $query_hum)&&mysqli_query($con, $query_light)&&mysqli_query($con, $query_smoke)) {
-//    echo "Record updated successfully";
-//} else {
-//    echo "Error updating record: " . mysqli_error($con);
-//};
+if (mysqli_query($con, $query_temp)&&mysqli_query($con, $query_hum)&&mysqli_query($con, $query_light)&&mysqli_query($con, $query_smoke)) {
+    echo 'a'.$result_sw1.',s'.$result_sw2;
+} else {
+    echo "Error updating record: " . mysqli_error($con);
+};
 ?>

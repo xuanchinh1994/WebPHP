@@ -23,6 +23,11 @@ $get = mysqli_fetch_assoc($result);
 $longitude = $get['longitude'];
 $latitude = $get['latitude'];
 
-echo $longitude.','.$latitude;
+$data = array(
+    'longitude' => $longitude,
+    'latitude' => $latitude
+);
+echo json_encode($data);
+
 
 ?>
