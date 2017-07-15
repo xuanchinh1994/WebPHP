@@ -362,8 +362,6 @@
         get_temps_data();
         get_hum_data();
         get_smoke_light();
-//        get_light_element();
-//        get_smoke_element();
         get_sw1_element();
         get_sw2_element();
         draw_hum_graph();
