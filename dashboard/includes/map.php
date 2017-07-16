@@ -60,7 +60,7 @@
         });
 
     }
-//    window.setInterval(initMap, 5000);
+    window.setInterval(initMap, 5000);
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxuSDEVtp2AKZ_X5av6xb-S3N9O3K9p8&callback=initMap">
