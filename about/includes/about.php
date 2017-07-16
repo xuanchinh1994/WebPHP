@@ -254,7 +254,7 @@
             <a href="https://drive.google.com/drive/u/1/folders/0B_K0b8WGeIhzMm1xbDZudDhpUjg"><img src="../base/img/android_icon.png" alt="" title=""></a>
         </li>
         <li class="animated wow fadeInDown" data-wow-delay=".1s">
-            <a href="http://arduino.vn/bai-viet/91-doc-nhiet-do-do-am-va-xuat-ra-man-hinh-lcd/"><img src="../base/img/arduino_icon_28.png" alt="" title=""></a>
+            <a href="http://arduino.vn/bai-viet/91-doc-nhiet-do-do-am-va-xuat-ra-man-hinh-lcd/"><img src="../base/img/ios_icon.png" alt="" title=""></a>
         </li>
         <li class="animated wow fadeInDown" data-wow-delay=".2s">
             <a href="http://www.windowsphone.com/en-us/store/app/firefox/6544df57-dd9c-4a61-bf89-9ba3832b849c"><img src="../base/img/windows_icon.png" alt="" title=""></a>

@@ -55,39 +55,60 @@ if(isset($_POST['submit'])){
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=0">
 		<link rel="icon" href="http://icons.iconarchive.com/icons/tatice/cristal-intense/256/Rubiks-cube-2-icon.png" type="image/x-icon" />
-		<title>Admin login</title>
+		<title>SMART CUBE</title>
 		<!-- Bootstrap core CSS -->
 		<link href="base/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Custom styles for this template -->
 		<link href="base/css/signin.css" rel="stylesheet">
-	</head>
+
+        <link rel="stylesheet" href="base/css/style.css">
+
+        <style>
+
+        body{
+        margin: 0;
+        padding: 0;
+        background: #fff;
+
+        color: #fff;
+        font-family: Arial;
+        font-size: 12px;
+        }
+
+        .body{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -40px;
+        bottom: -40px;
+        width: 100%;
+        height: 100%;
+        background-image: url(base/img/spkt.jpg);
+        background-size: cover;
+        -webkit-filter: blur(5px);
+        z-index: 0;
+        }
+
+        </style>
+    </head>
 
 	<body>
+    <div class="body"></div>
+    <div class="wrapper">
+            <img class="left_spkt" width="500px"  src="base/img/logo-news.png">
+            <img class="right_spkt" width="300px" src="base/img/CLC.png">
+<!--        </div>-->
 		<div class="container">
-			<form class="form-signin" action="" method="post">
-<!--                <h2>SMART CUBE</h2>-->
-<!--                <img src="../WebPHP/base/img/Smart_Cube.jpg" alt="SMART CUBE" style="width:304px;height:228px;">-->
-				<h3 class="form-signin-heading"><small>SMART CUBE</small></h3>
-				<div class="form-group">
-					<label class="sr-only" for="exampleInputAmount"></label>
-					<div class="input-group">
-					  <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-					  <input <?php if(isset($_COOKIE['username'])) echo "value='".$_COOKIE['username']."'"; ?> type="text" name="username" class="form-control input-sm" id="exampleInputAmount" placeholder="Username">
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="input-group">
-					  <div class="input-group-addon"><span class="glyphicon glyphicon glyphicon-lock" aria-hidden="true"></span></div>
-					  <input <?php if(isset($_COOKIE['password'])) echo "value='".$_COOKIE['password']."'"; ?> type="password" name="password" class="form-control input-sm" id="exampleInputAmount" placeholder="Password">
-					</div>
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name='remember'>Remember me
-					</label>
-				</div>
-				<button class="btn btn-sm btn-primary btn-block" type="submit" name="submit">Enter</button>
-				<br/>
+            <div class="col-lg-12">
+
+                <h1>ĐỒ ÁN TỐT NGHIỆP</h1>
+                <h2>Smart Cube</h2>
+            </div>
+
+			<form class="form" action="" method="post">
+					  <input <?php if(isset($_COOKIE['username'])) echo "value='".$_COOKIE['username']."'"; ?> type="text" name="username"  placeholder="Username">
+					  <input <?php if(isset($_COOKIE['password'])) echo "value='".$_COOKIE['password']."'"; ?> type="password" name="password"  placeholder="Password">
+				      <button type="submit" name="submit">Enter</button>
 				<?php
 					if(!$con){
 						echo '<div class="alert alert-info" role="alert">DB Connection failed! Use <b>admin/admin</b> to enter DB configuration mode!</div>';
@@ -95,5 +116,18 @@ if(isset($_POST['submit'])){
 				?>
 			</form>
 		</div> <!-- /container -->
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
   </body>
 </html>
