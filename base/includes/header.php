@@ -30,7 +30,7 @@ if(isset($_GET['menu'])){
         <meta name="author" content="">
         <title>SMART CUBE</title>
         <!-- Favicon -->
-        <link rel="icon" href="http://icons.iconarchive.com/icons/tatice/cristal-intense/256/Rubiks-cube-2-icon.png" type="image/x-icon" />
+        <link rel="icon" href="https://i.imgur.com/7KH7Xci.png" type="image/x-icon" />
         <!-- Bootstrap Core CSS -->
         <link href="../base/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->

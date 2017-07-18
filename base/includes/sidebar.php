@@ -1,7 +1,7 @@
 <div id="sidebar-wrapper">  
     <div class="user-panel">
         <div class="image pull-left">
-            <a href=""><img src="../base/img/Smart_Cube.jpg" class="img-circle" alt="User Image"></a>
+            <a href=""><img src="../base/img/logo.png" class="img-circle" alt="User Image"></a>
         </div>
         <div class="slogan pull-right">
             <h3 class="pull-right">SMART CUBE</h3>

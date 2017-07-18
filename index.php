@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=0">
-		<link rel="icon" href="http://icons.iconarchive.com/icons/tatice/cristal-intense/256/Rubiks-cube-2-icon.png" type="image/x-icon" />
+		<link rel="icon" href="https://i.imgur.com/7KH7Xci.png" type="image/x-icon" />
 		<title>SMART CUBE</title>
 		<!-- Bootstrap core CSS -->
 		<link href="base/css/bootstrap.min.css" rel="stylesheet">
